@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 3em;
+}
+a{
+    width: 20%;
+}
+
+.btn, #restart{
+    width: 100%;
+    font-size: 1.3em;
+    padding: 10px;
+    background: rgb(9, 238, 9);
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover, #restart:hover{
+    transform: scale(1.1);
+}
+
+/* Play.css */
+#restart{
+    width: 40%;
+    margin-top: -40px;
+}
+.board{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 50px auto;
+}
+.cell{ 
+    height: 25vh;
+    width: 33%;
+    max-width: 200px;
+    border: 2px solid green;
+    cursor: pointer;
+    font-size: 7em;
+    text-align: center;
+}
+.top{
+    border-top: none;
+}
+.left{
+    border-left: none;
+}
+.bottom{
+    border-bottom: none;
+}
+.right{
+    border-right: none;
+}
+
+
+@media (min-width: 700px) {
+    .board{
+        width: 60%;
+    }
+    #restart{
+        width: 20%;
+    }
+}
