@@ -9,7 +9,19 @@
 <body>
     <div class="container">
         <h1>Tic Tac Toe</h1>
-        <a href="play.html"><button class="btn">Play</button></a>
+        <button class="show btn">Play</button>
+        <popup class="popup">
+            <button class="hide">X</button>
+            <h2>Choose a Category:</h2>   
+            <div>
+                <a href="play.html?vs=cpu">
+                    <button class="pop-btn">Vs CPU</button>
+                </a>
+                <a href="play.html?vs=player">
+                    <button class="pop-btn">Vs Player</button>
+                </a> 
+            </div>
+        </popup>
     </div>
     <script src="JS/app.js"></script>
 </body>
