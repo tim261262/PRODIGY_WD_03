@@ -71,18 +71,6 @@ function playAgainstCPU(e){
     if(board[index] !== '' || !isGameActive) return;
     board[index] = currentPlayer;
     e.target.textContent = currentPlayer;
-    if(checkWin()){
-        alert(`${currentPlayer} wins!`);
-        isGameActive = false;
-    }else if(board.every(cell => cell !== '')){
-        alert('draw!');
-        isGameActive = false;
-    }else{
-        currentPlayer = 'X';
-        board[index] = cpu;
-        cpu = 'O';
-        e.target.textContent = cpu;
-    }
 }
 
 
